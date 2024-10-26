@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collections</title>
+    <!--Link Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <!--Css Link-->
+    <link rel="stylesheet" href="style.css">
+    <!--Font Awsome CDN link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <!--Offer Bar-->
+    <div class="offerbar">
+        <p>Sign Up and <b>GET 20% OFF</b> for your first Order</p>
+        <i id="offer-close" style="margin-left: 10%; cursor: pointer;" class="fa-solid fa-xmark"></i>
+        </p>
+    </div>
+
+    <!--Navbar-->
+    <div class="navbar">
+        <h2>Nostra</h2>
+        <div class="navbar-contents">
+            <p class="navbar-content"><a href="./index.html">Home</a></p>
+            <p class="navbar-content"><a href="./index.html ">New Arrival</a></p>
+            <p class="navbar-content"><a href="./index.html">Most Wanted</a></p>
+            <p class="navbar-content"><a href="./collections.html">Collectios</a></p>
+            <p class="navbar-content"><a href="./contact.html">Contact Us</a></p>
+        </div>
+
+        <div class="navbar-menu">
+            <i id="side-navbar-activate" class="fa-solid fa-bars"></i>
+        </div>
+
+    </div>
+
+    <!--Side Navbar-->
+
+    <div class="side-navbar">
+        <p style="text-align: right;">
+            <i id="side-navbar-close" class="fa-solid fa-xmark"></i>
+        </p>
+        <div class="side-navbar-links">
+
+            <p class="side-navbar-link"><a href="./index.html">Home</a></p>
+            <p class="side-navbar-link"><a href="./index.html">New Arrival</a></p>
+            <p class="side-navbar-link"><a href="./index.html">Most Wanted</a></p>
+            <p class="side-navbar-link"><a href="./collections.html">Collections</a></p>
+            <p class="side-navbar-link"><a href="./contact.html">Contact Us</a></p>
+        </div>
+    </div>
+
+    <!--Selection page-->
+    <div class="container">
+
+        <div class="divide-section">
+            <div class="filter-section">
+
+                <h3 class="filter-section-occasion">Occasion</h3>
+                <div>
+                    <input type="checkbox" name="tags" value="summer"> Summer <br>
+                    <input type="checkbox" name="tags" value="party"> Party <br>
+                    <input type="checkbox" name="tags" value="beach"> Beach
+
+                </div>
+
+                <h3 class="filter-section-colors"> Colors </h3>
+                <div>
+                    <input type="checkbox" name="tags" value="red"> Red <br>
+                    <input type="checkbox" name="tags" value="blue"> Blue <br>
+                    <input type="checkbox" name="tags" value="white"> White <br>
+                    <input type="checkbox" name="tags" value="green"> Green
+                </div>
+
+                <h3 class="filter-section-arrivals"> Arrivals </h3>
+                <div>
+                    <input type="checkbox" name="tags" value="new"> New <br>
+                    <input type="checkbox" name="tags" value="old"> Old
+                </div>
+
+                <hr class="vertical-line">
+            </div>
+
+            <div class="product-section">
+                <form class="navbar-search">
+                    <input type="search" placeholder="Search" id="search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </form>
+
+                <div class="products" id="container">
+
+                    <div class="colimg-container">
+                        <img class="col-img" src="./images/new1.jpg" alt="">
+                        <h2 class="col-name">Floral Summer Shirt</h2>
+                        <p class="price">₹220</p>
+                        <tag style="visibility: hidden;">new,blue,summer</tag>
+                    </div>
+
+                    <div class="col-contianer">
+                        <img class="col-img" src="./images/col1.jpg" alt="">
+                        <h2 class="col-name">Summer Green</h2>
+                        <p class="price">₹220</p>
+                        <tag style="visibility: hidden;">new,green,beach</tag>
+                    </div>
+
+                    <div>
+                        <img class="col-img" src="./images/col2.jpg" alt="">
+                        <h2 class="col-name">Party Floral Shirt</h2>
+                        <p class="price">₹339</p>
+                        <tag style="visibility: hidden;">old,red,party</tag>
+                    </div>
+
+                    <div>
+                        <img class="col-img" src="./images/col3.jpg" alt="">
+                        <h2 class="col-name">Beach Shirt</h2>
+                        <p class="price">₹339</p>
+                        <tag style="visibility: hidden;">old,white,beach</tag>
+                    </div>
+
+                    <div class="colimg-container">
+                        <img class="col-img" src="./images/wanted7.jpg" alt="">
+                        <h2 class="col-name">Formal Shirt</h2>
+                        <p class="price">₹220</p>
+                        <tag style="visibility: hidden;">old,green,summer</tag>
+                    </div>
+
+                    <div>
+                        <img class="col-img" src="./images/col5.jpg" alt="">
+                        <h2 class="col-name">Shirt Party Red</h2>
+                        <p class="price">₹579</p>
+                        <tag style="visibility: hidden;">old, red, party</tag>
+                    </div>
+
+                    <div>
+                        <img class="col-img" src="./images/col2.jpg" alt="">
+                        <h2 class="col-name">Party Floral Shirt</h2>
+                        <p class="price">₹399</p>
+                        <tag style="visibility: hidden;">old,red,party</tag>
+                    </div>
+
+                    <div>
+                        <img class="col-img" src="./images/col5.jpg" alt="">
+                        <h2 class="col-name">Shirt Party RED</h2>
+                        <p class="price">₹579</p>
+                        <tag style="visibility: hidden;">old, red,party</tag>
+                    </div>
+
+                    <div>
+                        <img class="col-img" src="./images/col4.jpg" alt="">
+                        <h2 class="col-name">Beach Shirt</h2>
+                        <p class="price">₹579</p>
+                        <tag style="visibility: hidden;">new,blue,beach</tag>
+                    </div>
+
+
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <!--News-->
+
+    <div class="news">
+        <h2>Join Our News Letter</h2>
+        <p>Signup for our email newspaper to get exclusive discounts, updates, and more</p>
+        <input class="input">
+        <button>Subscribe <i class="fa-solid fa-arrow-right"></i></button>
+    </div>
+
+    <!--Footer-->
+    <div class="footer">
+        <div class="footer-container">
+            <div class="footer-box-1">
+                <h2>Nostra</h2>
+                <p>The Standard chunk of Lorem ipsum used since the 1500s is reprodused below for those interest
+                </p>
+                <div class="footer-icon-container">
+                    <i class="icon fa-brands fa-instagram" style="color: #ffffff;"></i>
+                    <i class="icon fa-brands fa-twitter" style="color: #ffffff;"></i>
+                    <i class="icon fa-brands fa-facebook" style="color: #ffffff;"></i>
+
+                </div>
+            </div>
+
+        </div>
+        <p class="subtitle">@ 2023 Nostra.com</p>
+
+    </div>
+
+
+    <script src="collections.js"></script>
+</body>
+
+</html>
