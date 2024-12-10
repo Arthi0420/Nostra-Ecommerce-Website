@@ -48,29 +48,25 @@ search.addEventListener("keyup", function () {
 
 })
 
-//CheckBox Function
 
-// var tags = document.getElementsByTagName("tags")
-// var products = document.getElementById("products")
-// occasion = []
+// Products filter function
 
-// for (count = 0; count < tags.length; count = count + 1) {
-//     tags[count].addEventListener("click", function () {
-//         if (event.target.checked) {
-//             console.log("checked")
-//             occasion.push(event.target.value)
-//             products.textContent = occasion
-//             tags.style.display = "none"
-//         }
+function filterProducts() {
+    
+    const checkedFilters = Array.from(document.querySelectorAll('.filter-section input:checked')).map(input => input.value.toLowerCase());
 
-//         else {
-//             console.log("unchecked")
-//             var index = occasion.indexOf(event.target.value)
-//             occasion.splice(index, 1)
-//             products.textContent = occasion
-//             tags.style.display = "block"
-//         }
-//     }
-//     )
-// }
+    
+    const products = document.querySelectorAll('.products > div');
 
+    products.forEach(product => {
+        const productTags = product.querySelector('tag').textContent.toLowerCase().split(',');
+
+        const matches = checkedFilters.every(filter => productTags.includes(filter));
+
+       product.style.display = checkedFilters.length === 0 || matches ? 'block' : 'none';
+    });
+}
+
+document.querySelectorAll('.filter-section input').forEach(input => {
+    input.addEventListener('change', filterProducts);
+});
